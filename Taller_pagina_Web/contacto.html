@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contacto | Salto a Linux</title>
+	<meta name="description"
+		content="Escríbenos si tienes una duda sobre Linux o un problema al instalarlo. Completa el formulario y cuéntanos tu caso.">
+
+	<meta property="og:title" content="Contacto | Salto a Linux">
+	<meta property="og:description" content="¿Dudas o problemas con Linux? Cuéntanos tu caso.">
+	<meta property="og:image" content="https://tu-usuario.github.io/salto-a-linux/imagenes/portada.png">
+	<meta property="og:url" content="https://tu-usuario.github.io/salto-a-linux/contacto.html">
+
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+	<header class="cabecera">
+		<div class="contenedor">
+			<a class="marca" href="index.html"> Salto a Linux</a>
+			<nav>
+				<ul class="menu">
+					<li><a href="index.html">Inicio</a></li>
+					<li><a href="distribuciones.html">Distribuciones</a></li>
+					<li><a href="contacto.html" aria-current="page">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main class="contenedor">
+		<section>
+			<h1>¿Tienes una duda o un problema?</h1>
+			<p>Cuéntanos qué te pasa con Linux. Cuanto más detalle des, mejor. Este formulario es una demostración: los
+				datos no se envían a ningún servidor.</p>
+		</section>
+
+		<section>
+			<h2>Formulario de contacto</h2>
+			<form action="#" method="get">
+				<label for="nombre">Nombre o apodo</label>
+				<input type="text" id="nombre" name="nombre" required minlength="2" maxlength="40">
+
+				<label for="correo">Correo electrónico</label>
+				<input type="email" id="correo" name="correo" required>
+
+				<label for="tipo">Tipo de consulta</label>
+				<select id="tipo" name="tipo" required>
+					<option value="">Elige una opción</option>
+					<option value="duda">Duda sobre distribuciones</option>
+					<option value="problema">Problema de instalación o uso</option>
+					<option value="otro">Otro tema</option>
+				</select>
+
+				<label for="distro">Distribución de interés (opcional)</label>
+				<input type="text" id="distro" name="distro" list="lista-distros">
+				<datalist id="lista-distros">
+					<option value="Linux Mint">
+					<option value="Ubuntu">
+					<option value="Zorin OS">
+					<option value="Fedora">
+				</datalist>
+
+				<label for="mensaje">Tu mensaje</label>
+				<textarea id="mensaje" name="mensaje" rows="5" required minlength="20" maxlength="500"></textarea>
+				<small>Entre 20 y 500 caracteres.</small>
+
+				<div>
+					<button class="boton" type="submit">Enviar</button>
+					<button class="boton" type="reset">Borrar</button>
+				</div>
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<div class="contenedor">
+			<p>Salto a Linux es un proyecto educativo. Los nombres de las distribuciones pertenecen a sus respectivos
+				proyectos.</p>
+		</div>
+	</footer>
+</body>
+
+</html>
